@@ -32,3 +32,5 @@ C:\Users\mmamindla\source\repos\Kairosfolio\Kairosfolio.API\obj\Debug\net9.0\ref
 C:\Users\mmamindla\source\repos\Kairosfolio\Kairosfolio.API\obj\Debug\net9.0\Kairosfolio.API.pdb
 C:\Users\mmamindla\source\repos\Kairosfolio\Kairosfolio.API\obj\Debug\net9.0\Kairosfolio.API.genruntimeconfig.cache
 C:\Users\mmamindla\source\repos\Kairosfolio\Kairosfolio.API\obj\Debug\net9.0\ref\Kairosfolio.API.dll
+C:\Users\mmamindla\source\repos\Kairosfolio\Kairosfolio.API\obj\Debug\net9.0\Kairosfolio.API.sourcelink.json
+C:\Users\mmamindla\source\repos\Kairosfolio\Kairosfolio.API\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
