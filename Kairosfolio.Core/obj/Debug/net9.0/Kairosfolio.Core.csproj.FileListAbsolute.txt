@@ -1,0 +1,11 @@
+C:\Users\mmamindla\source\repos\Kairosfolio\Kairosfolio.Core\bin\Debug\net9.0\Kairosfolio.Core.deps.json
+C:\Users\mmamindla\source\repos\Kairosfolio\Kairosfolio.Core\bin\Debug\net9.0\Kairosfolio.Core.dll
+C:\Users\mmamindla\source\repos\Kairosfolio\Kairosfolio.Core\bin\Debug\net9.0\Kairosfolio.Core.pdb
+C:\Users\mmamindla\source\repos\Kairosfolio\Kairosfolio.Core\obj\Debug\net9.0\Kairosfolio.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mmamindla\source\repos\Kairosfolio\Kairosfolio.Core\obj\Debug\net9.0\Kairosfolio.Core.AssemblyInfoInputs.cache
+C:\Users\mmamindla\source\repos\Kairosfolio\Kairosfolio.Core\obj\Debug\net9.0\Kairosfolio.Core.AssemblyInfo.cs
+C:\Users\mmamindla\source\repos\Kairosfolio\Kairosfolio.Core\obj\Debug\net9.0\Kairosfolio.Core.csproj.CoreCompileInputs.cache
+C:\Users\mmamindla\source\repos\Kairosfolio\Kairosfolio.Core\obj\Debug\net9.0\Kairosfolio.Core.dll
+C:\Users\mmamindla\source\repos\Kairosfolio\Kairosfolio.Core\obj\Debug\net9.0\refint\Kairosfolio.Core.dll
+C:\Users\mmamindla\source\repos\Kairosfolio\Kairosfolio.Core\obj\Debug\net9.0\Kairosfolio.Core.pdb
+C:\Users\mmamindla\source\repos\Kairosfolio\Kairosfolio.Core\obj\Debug\net9.0\ref\Kairosfolio.Core.dll

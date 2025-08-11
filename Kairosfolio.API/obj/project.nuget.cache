@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "50D2LOrC6wo=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\mmamindla\\source\\repos\\Kairosfolio\\Kairosfolio.API\\Kairosfolio.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mmamindla\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.6\\microsoft.aspnetcore.openapi.9.0.6.nupkg.sha512",
+    "C:\\Users\\mmamindla\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
