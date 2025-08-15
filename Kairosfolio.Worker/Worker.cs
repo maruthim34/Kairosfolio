@@ -1,4 +1,4 @@
-using Kairosfolio.Worker.Contracts;
+using Kairosfolio.Worker.Contracts.Services;
 
 namespace Kairosfolio.Worker;
 
@@ -21,11 +21,14 @@ public class Worker : BackgroundService
             {
                 if (_logger.IsEnabled(LogLevel.Information))
                 {
-                    var price = await _stockApiService.FetchStockDataAsync("TataSteel", stoppingToken);
-                    _logger.LogInformation($"TataSteel: {price}");
+                    //var price = await _stockApiService.FetchStockDataAsync("TataSteel", stoppingToken);
+                    //_logger.LogInformation($"TataSteel: {price}");
+
+                    var price = await _stockApiService.GetPriceAsync("TSLA");
+                    _logger.LogInformation($"TSLA: {price}");
 
                 }
-                await Task.Delay(5000, stoppingToken);
+                await Task.Delay(TimeSpan.FromMinutes(1), stoppingToken);
             }
         }
         catch (Exception ex)
