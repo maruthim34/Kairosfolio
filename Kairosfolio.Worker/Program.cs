@@ -1,6 +1,6 @@
+using Kairosfolio.Core.Contracts.Services;
 using Kairosfolio.Worker;
 using Kairosfolio.Worker.Contracts.Repositories;
-using Kairosfolio.Worker.Contracts.Services;
 using Kairosfolio.Worker.Repositories.Impl;
 using Kairosfolio.Worker.Services.Impl;
 

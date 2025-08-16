@@ -1,5 +1,5 @@
 ﻿using Kairosfolio.Worker.Contracts.Repositories;
-using Kairosfolio.Worker.Contracts.Services;
+using Kairosfolio.Core.Contracts.Services;
 using Kairosfolio.Worker.Entities;
 using System;
 using System.Collections.Generic;
@@ -28,17 +28,34 @@ namespace Kairosfolio.Worker.Services.Impl
         }
         public async Task<decimal> GetPriceAsync(string symbol)
         {
-            var response = await _httpClient.GetAsync($"query?function=GLOBAL_QUOTE&symbol={symbol}&apikey={_apiKey}");
+            var response = await _httpClient.GetAsync(
+            $"query?function=GLOBAL_QUOTE&symbol={symbol}&apikey={_apiKey}");
+
             response.EnsureSuccessStatusCode();
 
             var json = await response.Content.ReadAsStringAsync();
             var data = JsonSerializer.Deserialize<StockResponse>(json);
 
-            var price = decimal.TryParse(data?.GlobalQuote?.Price, out var parsedPrice) ? parsedPrice : 0m;
-
+            return decimal.TryParse(data?.GlobalQuote?.Price, out var parsedPrice)
+                ? parsedPrice
+                : 0m;
+        }
+        public async Task<decimal> FetchAndSavePriceAsync(string symbol)
+        {
+            var price = await GetPriceAsync(symbol);
             await _stockRepository.InsertStockAsync(symbol, price, "USD", "AlphaVantage");
-
             return price;
+        }
+        public async Task<Dictionary<string, decimal>> GetPricesAsync(IEnumerable<string> symbols)
+        {
+            var tasks = symbols.Select(async symbol =>
+            {
+                var price = await FetchAndSavePriceAsync(symbol);
+                return (symbol, price);
+            });
+
+            var results = await Task.WhenAll(tasks);
+            return results.ToDictionary(x => x.symbol, x => x.price);
         }
 
     }

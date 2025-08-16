@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Kairosfolio.Core\Kairosfolio.Core.csproj" />
+    <ProjectReference Include="..\Kairosfolio.Worker\Kairosfolio.Worker.csproj" />
   </ItemGroup>
 
 </Project>
